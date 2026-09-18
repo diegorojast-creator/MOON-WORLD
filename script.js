@@ -1,32 +1,9 @@
 // Base de datos de productos de MOON WORLD 2025
 const productos = [
   {
-    id: 1,
-    nombre: "Juego ¡BASTA!",
-    categoria: "Juegos y Entretenimiento",
-    descripcion: "Juego de mesa 'Piensa rápido y contesta' - Diversión para toda la familia",
-    precioMayor: 32000,
-    precioDetal: 42000,
-    imagen: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=60"
-  },
-  {
-    id: 2,
-    nombre: "Esfera de Cristal 3D - FIJA",
-    categoria: "Decoración y Regalos",
-    descripcion: "Esferas de cristal 3D con diseños grabados láser en el interior",
-    precioMayor: 20000,
-    precioDetal: 30000,
-    imagen: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=60"
-  },
-  {
-    id: 3,
-    nombre: "Esfera de Cristal 3D - GIRATORIA",
-    categoria: "Decoración y Regalos",
-    descripcion: "Esferas de cristal 3D giratorias con base rotatoria motorizada",
-    precioMayor: 30000,
-    precioDetal: 45000,
-    imagen: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=500&auto=format&fit=crop&q=60"
-  },
+    id: 1, nombre: "Juego ¡BASTA!", categoria: "Juegos y Entretenimiento", descripcion: "Juego de mesa 'Piensa rápido y contesta' - Diversión para toda la familia", precioMayor: 32000, precioDetal: 42000, imagen: "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=500&auto=format&fit=crop&q=60"},
+  { id: 2, nombre: "Esfera de Cristal 3D - FIJA", categoria: "Decoración y Regalos", descripcion: "Esferas de cristal 3D con diseños grabados láser en el interior", precioMayor: 20000, precioDetal: 30000, imagen: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=60"},
+  { id: 3, nombre: "Esfera de Cristal 3D - GIRATORIA", categoria: "Decoración y Regalos", descripcion: "Esferas de cristal 3D giratorias con base rotatoria motorizada", precioMayor: 30000, precioDetal: 45000, imagen: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=500&auto=format&fit=crop&q=60"},
   {
     id: 4,
     nombre: "Comedero Automático para Mascotas",
