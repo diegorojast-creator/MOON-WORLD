@@ -1,0 +1,64 @@
+/* Custom Styles - MOON WORLD 2025 (Neón Balanceado) */
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #060919;
+  color: #ffffff;
+  background-image: 
+    radial-gradient(circle at 15% 15%, rgba(139, 0, 255, 0.18) 0%, transparent 40%),
+    radial-gradient(circle at 85% 85%, rgba(0, 217, 255, 0.15) 0%, transparent 40%);
+  background-attachment: fixed;
+}
+
+/* Tarjeta Hero Principal */
+.hero-border {
+  border: 1px solid #00d9ff;
+  box-shadow: 
+    0 0 15px rgba(0, 217, 255, 0.4),
+    inset 0 0 15px rgba(0, 217, 255, 0.1);
+}
+
+/* Encabezados y Títulos Neón (Legibles) */
+.neon-title, .neon-text-cyan {
+  color: #00d9ff;
+  text-shadow: 0 0 6px rgba(0, 217, 255, 0.7);
+}
+
+/* Botones de acción llenos ("Agregar", "WhatsApp") */
+.neon-btn-cyan {
+  background-color: #00d9ff;
+  color: #060919;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 217, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+}
+
+.neon-btn-cyan:hover {
+  box-shadow: 0 0 16px rgba(0, 217, 255, 0.8);
+}
+
+/* Bordes de tarjetas y panel lateral */
+.neon-border-cyan {
+  border: 1px solid #00d9ff;
+  box-shadow: 0 0 8px rgba(0, 217, 255, 0.25);
+}
+
+/* Barra lateral del carrito */
+.cart-border {
+  border-left: 1px solid #00d9ff;
+  box-shadow: -4px 0 12px rgba(0, 217, 255, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #060919;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f1535;
+  border: 1px solid #00d9ff;
+  border-radius: 4px;
+}

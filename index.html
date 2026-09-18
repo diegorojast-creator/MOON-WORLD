@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOON WORLD 2025 - Catálogo Futurista</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts: Orbitron y Rajdhani -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            space: {
+              dark: '#060919',
+              card: '#0f1535',
+              border: '#1e295d',
+              accent: '#00d9ff',
+              neonPink: '#ff00ff',
+              neonPurple: '#8b00ff'
+            }
+          },
+          fontFamily: {
+            orbitron: ['Orbitron', 'sans-serif'],
+            rajdhani: ['Rajdhani', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Estilos independientes -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="stars-bg min-h-screen flex flex-col justify-between selection:bg-space-neonPink selection:text-white relative">
+
+  <!-- ================= HEADER ================= -->
+  <header class="sticky top-0 z-40 bg-space-dark/95 backdrop-blur-md border-b border-space-border px-6 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3">
+      <div>
+        <span class="font-orbitron font-black text-xl tracking-wider text-white block leading-none">MOON WORLD</span>
+        <span class="text-[10px] text-slate-400 tracking-widest block font-sans">月亮国际贸易</span>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8 font-sans text-sm text-slate-300">
+      <a href="#hero" class="hover:text-space-accent transition-colors">Página principal</a>
+      <a href="#catalogo" class="hover:text-space-accent transition-colors">Catálogo</a>
+      <a href="#contacto" class="hover:text-space-accent transition-colors">Contacto</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="tel:3223569596" class="text-space-accent text-xs font-sans flex items-center gap-1">
+        <i class="fa-solid fa-phone text-xs"></i> 3223569596
+      </a>
+      <span class="bg-space-card border border-space-border text-slate-300 text-[11px] px-2 py-1 rounded font-mono">LWH</span>
+      
+      <!-- Botón del Carrito en Header -->
+      <button onclick="toggleCarrito()" class="relative bg-space-card border border-space-accent/50 hover:border-space-accent text-space-accent px-3 py-1.5 rounded flex items-center gap-2 text-xs font-bold transition">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="contadorCarritoHeader" class="bg-space-accent text-space-dark text-[10px] font-bold px-1.5 rounded-full">0</span>
+      </button>
+
+      <a href="https://wa.me/573223569596" target="_blank" class="bg-space-accent hover:bg-cyan-400 text-space-dark font-sans text-xs font-bold py-2 px-4 rounded transition shadow-[0_0_15px_rgba(0,217,255,0.4)]">
+        Contáctenos
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section id="hero" class="relative py-16 px-4 max-w-5xl mx-auto my-4">
+    <div class="hero-border rounded-2xl p-10 bg-space-card/80 backdrop-blur-md text-center relative overflow-hidden">
+      <div class="inline-block px-3 py-1 rounded-md bg-space-accent/20 border border-space-accent text-space-accent text-xs font-sans mb-6">
+        CATÁLOGO 2025
+      </div>
+
+      <h1 class="font-orbitron text-5xl sm:text-7xl font-black text-white tracking-wider mb-2">
+        MOON WORLD
+      </h1>
+
+      <p class="text-slate-300 text-base font-sans mb-4">
+        月亮国际贸易 (Yuèliàng guójì màoyì)
+      </p>
+
+      <div class="flex justify-center items-center gap-3 mb-6">
+        <span class="bg-emerald-950/80 border border-emerald-500/50 text-emerald-400 text-xs px-3 py-1 rounded font-mono">
+          Código: LWH
+        </span>
+        <a href="https://wa.me/573223569596" class="text-space-accent font-sans text-sm font-semibold flex items-center gap-1">
+          <i class="fa-solid fa-phone text-xs"></i> 3223569596
+        </a>
+      </div>
+
+      <h2 class="text-2xl sm:text-3xl font-orbitron font-bold text-space-accent mb-8">
+        Explora el futuro
+      </h2>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#catalogo" class="px-6 py-2.5 bg-space-accent text-space-dark font-sans text-xs font-bold rounded hover:bg-cyan-300 transition flex items-center gap-2">
+          <i class="fa-solid fa-sparkles"></i> Ver Catálogo Completo
+        </a>
+        <a href="https://wa.me/573223569596" target="_blank" class="px-6 py-2.5 bg-transparent border border-space-accent/60 text-space-accent font-sans text-xs font-bold rounded hover:bg-space-accent/10 transition flex items-center gap-2">
+          <i class="fa-regular fa-comment"></i> Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRANSFORMA TU MUNDO ================= -->
+  <section class="py-12 px-4 max-w-6xl mx-auto">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <h2 class="font-orbitron text-3xl md:text-4xl font-bold text-white mb-3">
+        Explora cómo un diseño futurista <br>
+        <span class="text-space-neonPink">puede transformar tu mundo</span>
+      </h2>
+      <p class="text-slate-400 text-sm">
+        Moon World 2025 te invita a un viaje por un catálogo de productos visionarios
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-space-card/60 border border-space-border p-8 rounded-2xl">
+      <div class="bg-space-dark rounded-xl p-6 border border-space-border flex items-center justify-center">
+        <!-- Blueprint / Diagrama Futurista -->
+        <div class="text-space-accent/60 text-center py-8">
+          <i class="fa-solid fa-diagram-project text-8xl mb-4 opacity-50"></i>
+          <p class="font-mono text-xs text-slate-500">SCHEMATIC SYSTEM v2025.09</p>
+        </div>
+      </div>
+      <div class="space-y-6">
+        <p class="text-slate-300 text-sm leading-relaxed">
+          Experimenta el futuro con precios claros y contacto instantáneo a través de WhatsApp.
+        </p>
+        <div class="flex gap-4">
+          <a href="#catalogo" class="px-5 py-2.5 bg-space-accent text-space-dark font-sans text-xs font-bold rounded hover:bg-cyan-300 transition flex items-center gap-2">
+            <i class="fa-solid fa-sparkles"></i> Explorar ahora
+          </a>
+          <a href="https://wa.me/573223569596" target="_blank" class="px-5 py-2.5 bg-transparent border border-space-accent/60 text-space-accent font-sans text-xs font-bold rounded hover:bg-space-accent/10 transition flex items-center gap-2">
+            <i class="fa-regular fa-comment"></i> Contáctanos
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATEGORÍAS (14 TARJETAS) ================= -->
+  <section id="categorias" class="py-12 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <span class="bg-space-accent/20 text-space-accent text-[10px] font-sans px-3 py-1 rounded-md uppercase tracking-wider border border-space-accent/40">CATEGORÍAS</span>
+      <h2 class="font-orbitron text-3xl font-bold text-white mt-3">
+        Explora Nuestro Catálogo <span class="text-space-neonPink">Futurista</span>
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      
+      <!-- C1 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-gamepad"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Juegos y Entretenimiento</h3>
+        <p class="text-slate-400 text-xs my-2">Diversión sin límites</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Realidad Virtual</li>
+          <li>• Consolas Next-Gen</li>
+          <li>• Gadgets Interactivos</li>
+        </ul>
+        <button onclick="filtrarCategoria('Juegos y Entretenimiento')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Juegos</button>
+      </div>
+
+      <!-- C2 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-gift"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Decoración y Regalos</h3>
+        <p class="text-slate-400 text-xs my-2">Estilo para tu hogar</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Diseño Minimalista</li>
+          <li>• Iluminación LED</li>
+          <li>• Regalos Innovadores</li>
+        </ul>
+        <button onclick="filtrarCategoria('Decoración y Regalos')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Decoración</button>
+      </div>
+
+      <!-- C3 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-lightbulb"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Decoración y Iluminación</h3>
+        <p class="text-slate-400 text-xs my-2">Ilumina tu espacio</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Proyectores LED</li>
+          <li>• Luces ambientales</li>
+          <li>• Decoración futurista</li>
+        </ul>
+        <button onclick="filtrarCategoria('Decoración y Regalos')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Decoración</button>
+      </div>
+
+      <!-- C4 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-paw"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Mascotas</h3>
+        <p class="text-slate-400 text-xs my-2">Lo mejor para tus amigos</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Comederos Inteligentes</li>
+          <li>• Juguetes Interactivos</li>
+          <li>• Monitoreo Avanzado</li>
+        </ul>
+        <button onclick="filtrarCategoria('Mascotas')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Mascotas</button>
+      </div>
+
+      <!-- C5 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-house font-bold"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Hogar y Confort</h3>
+        <p class="text-slate-400 text-xs my-2">Tu espacio inteligente</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Automatización</li>
+          <li>• Climatización</li>
+          <li>• Seguridad Doméstica</li>
+        </ul>
+        <button onclick="filtrarCategoria('Hogar y Confort')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Hogar</button>
+      </div>
+
+      <!-- C6 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-mug-hot"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Hogar y Bebidas</h3>
+        <p class="text-slate-400 text-xs my-2">Hidratación inteligente</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Termos térmicos</li>
+          <li>• Mantiene temperatura</li>
+          <li>• Diseño ergonómico</li>
+        </ul>
+        <button onclick="filtrarCategoria('Hogar y Confort')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Hogar</button>
+      </div>
+
+      <!-- C7 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-plug"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Electrodomésticos</h3>
+        <p class="text-slate-400 text-xs my-2">Innovación en tu cocina</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Alta eficiencia</li>
+          <li>• Diseño moderno</li>
+          <li>• Fácil uso</li>
+        </ul>
+        <button onclick="filtrarCategoria('Electrodomésticos')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Electrodomésticos</button>
+      </div>
+
+      <!-- C8 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-scissors"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Cuidado Personal</h3>
+        <p class="text-slate-400 text-xs my-2">Bienestar futurista</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Tecnología de precisión</li>
+          <li>• Diseño ergonómico</li>
+          <li>• Recargable</li>
+        </ul>
+        <button onclick="filtrarCategoria('Cuidado Personal')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Cuidado</button>
+      </div>
+
+      <!-- C9 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-heart-pulse"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Salud y Bienestar</h3>
+        <p class="text-slate-400 text-xs my-2">Tu salud primero</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Terapia térmica</li>
+          <li>• Alivio del dolor</li>
+          <li>• Tecnología médica</li>
+        </ul>
+        <button onclick="filtrarCategoria('Cuidado Personal')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Salud</button>
+      </div>
+
+      <!-- C10 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-clock"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Tecnología y Smartwatches</h3>
+        <p class="text-slate-400 text-xs my-2">Conecta con el futuro</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Monitoreo de salud</li>
+          <li>• Diseños personalizables</li>
+          <li>• Batería duradera</li>
+        </ul>
+        <button onclick="filtrarCategoria('Tecnología y Smartwatches')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Tecnología</button>
+      </div>
+
+      <!-- C11 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-headphones"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Tecnología y Audio</h3>
+        <p class="text-slate-400 text-xs my-2">Sonido premium</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Audio Hi-Fi</li>
+          <li>• Bluetooth avanzado</li>
+          <li>• Diseño confortable</li>
+        </ul>
+        <button onclick="filtrarCategoria('Tecnología y Smartwatches')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Tecnología</button>
+      </div>
+
+      <!-- C12 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Accesorios y Seguridad</h3>
+        <p class="text-slate-400 text-xs my-2">Protección inteligente</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Antirrobo</li>
+          <li>• Materiales resistentes</li>
+          <li>• Diseño funcional</li>
+        </ul>
+        <button onclick="filtrarCategoria('Juegos y Entretenimiento')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Accesorios</button>
+      </div>
+
+      <!-- C13 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-bullseye"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Juguetes y Réplicas</h3>
+        <p class="text-slate-400 text-xs my-2">Diversión realista</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Simulación avanzada</li>
+          <li>• Seguridad certificada</li>
+          <li>• Alta calidad</li>
+        </ul>
+        <button onclick="filtrarCategoria('Juguetes y Réplicas')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Juguetes</button>
+      </div>
+
+      <!-- C14 -->
+      <div class="bg-space-card/70 border border-space-border hover:border-space-accent/60 rounded-xl p-6 text-center transition group">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-xl group-hover:scale-110 transition"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3 class="font-orbitron text-base font-bold text-white">Belleza y Cosmética</h3>
+        <p class="text-slate-400 text-xs my-2">Cuidado y Estilo</p>
+        <ul class="text-[11px] text-slate-500 space-y-1 mb-4">
+          <li>• Cuidado Facial</li>
+          <li>• Cosmética Futurista</li>
+          <li>• Maquillaje y Masajes</li>
+        </ul>
+        <button onclick="filtrarCategoria('Belleza y Cosmética')" class="w-full py-1.5 border border-space-accent/50 text-space-accent font-sans text-xs rounded hover:bg-space-accent hover:text-space-dark transition">Ver Belleza</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= INNOVACIÓN EN TUS MANOS ================= -->
+  <section class="py-12 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-8">
+      <span class="bg-space-accent/20 text-space-accent text-[10px] font-sans px-3 py-1 rounded-md uppercase tracking-wider border border-space-accent/40">NUEVO - Productos Destacados</span>
+      <h2 class="font-orbitron text-3xl font-bold text-white mt-3">Innovación en tus manos</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="bg-space-card/80 border border-space-border rounded-xl p-6 text-center">
+        <div class="w-14 h-14 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-clock"></i></div>
+        <h3 class="font-orbitron text-lg font-bold text-white">Smartwatches Avanzados</h3>
+        <p class="text-slate-400 text-xs mt-2">Controla tu mundo desde tu muñeca con nuestros smartwatches inteligentes</p>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border rounded-xl p-6 text-center">
+        <div class="w-14 h-14 rounded-full bg-space-neonPink/20 text-space-neonPink flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3 class="font-orbitron text-lg font-bold text-white">Decoración Futurista</h3>
+        <p class="text-slate-400 text-xs mt-2">Ilumina tu espacio con esferas de cristal 3D únicas</p>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border rounded-xl p-6 text-center">
+        <div class="w-14 h-14 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto mb-4 text-2xl"><i class="fa-solid fa-paw"></i></div>
+        <h3 class="font-orbitron text-lg font-bold text-white">Tecnología para Mascotas</h3>
+        <p class="text-slate-400 text-xs mt-2">Cuida a tus amigos con productos inteligentes</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= CATÁLOGO COMPLETO ================= -->
+  <section id="catalogo" class="py-12 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-8">
+      <h2 class="font-orbitron text-3xl sm:text-4xl font-bold text-white">CATÁLOGO COMPLETO</h2>
+      <p class="text-slate-400 text-sm mt-1">Nuestros Productos 2025</p>
+    </div>
+
+    <!-- Buscador y Filtros (Pills Exactas) -->
+    <div class="bg-space-card/90 border border-space-border rounded-2xl p-6 mb-8 space-y-4">
+      <div class="flex flex-col md:flex-row gap-4 justify-between items-center">
+        <div class="relative w-full md:w-80">
+          <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-500 text-xs"></i>
+          <input type="text" id="inputBusqueda" placeholder="Buscar producto..." 
+                 class="w-full bg-space-dark border border-space-border rounded-lg pl-9 pr-4 py-2 text-xs text-white focus:outline-none focus:border-space-accent">
+        </div>
+        <div>
+          <select id="selectOrden" class="bg-space-dark border border-space-border rounded-lg px-3 py-2 text-xs text-slate-300 focus:outline-none">
+            <option value="default">Ordenar por</option>
+            <option value="precio-asc">Precio: Menor a Mayor</option>
+            <option value="precio-desc">Precio: Mayor a Menor</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Pills de Filtro -->
+      <div id="containerPills" class="flex flex-wrap gap-2 pt-2">
+        <!-- Renderizado dinámico vía JS -->
+      </div>
+    </div>
+
+    <!-- Grid de Productos -->
+    <div id="gridProductos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Tarjetas renderizadas dinámicamente -->
+    </div>
+  </section>
+
+  <!-- ================= VENTAJAS ================= -->
+  <section class="py-12 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="font-orbitron text-3xl font-bold text-space-accent mb-2">Ventajas de Moon World</h2>
+      <p class="text-slate-400 text-xs">Descubre por qué Moon World 2025 es tu mejor opción para productos futuristas e innovadores</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="bg-space-card/80 border border-space-border p-6 rounded-xl text-center">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-3 text-lg"><i class="fa-solid fa-rocket"></i></div>
+        <h3 class="font-orbitron font-bold text-white text-sm">Envío Rápido</h3>
+        <p class="text-slate-400 text-xs my-2">Recibe tus productos en tiempo récord</p>
+        <button class="px-3 py-1 border border-space-accent/40 text-space-accent text-[11px] rounded hover:bg-space-accent/10">Ver Detalles</button>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-6 rounded-xl text-center">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-3 text-lg"><i class="fa-solid fa-chart-line"></i></div>
+        <h3 class="font-orbitron font-bold text-white text-sm">Precios Competitivos</h3>
+        <p class="text-slate-400 text-xs my-2">La mejor calidad al mejor precio del mercado</p>
+        <button class="px-3 py-1 border border-space-accent/40 text-space-accent text-[11px] rounded hover:bg-space-accent/10">Ver Detalles</button>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-6 rounded-xl text-center">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-3 text-lg"><i class="fa-solid fa-shield-halved"></i></div>
+        <h3 class="font-orbitron font-bold text-white text-sm">Garantía de Satisfacción</h3>
+        <p class="text-slate-400 text-xs my-2">Tu felicidad es nuestra prioridad, compra sin preocupaciones</p>
+        <button class="px-3 py-1 border border-space-accent/40 text-space-accent text-[11px] rounded hover:bg-space-accent/10">Saber Más</button>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-6 rounded-xl text-center">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-3 text-lg"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+        <h3 class="font-orbitron font-bold text-white text-sm">Innovación Constante</h3>
+        <p class="text-slate-400 text-xs my-2">Siempre a la vanguardia con lo último en tecnología</p>
+        <button class="px-3 py-1 border border-space-accent/40 text-space-accent text-[11px] rounded hover:bg-space-accent/10">Saber Más</button>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-6 rounded-xl text-center">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-3 text-lg"><i class="fa-solid fa-headset"></i></div>
+        <h3 class="font-orbitron font-bold text-white text-sm">Soporte 24/7</h3>
+        <p class="text-slate-400 text-xs my-2">Asistencia personalizada en cualquier momento que la necesites</p>
+        <button class="px-3 py-1 border border-space-accent/40 text-space-accent text-[11px] rounded hover:bg-space-accent/10">Conocer Más</button>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-6 rounded-xl text-center">
+        <div class="w-12 h-12 rounded-full bg-space-accent/20 text-space-accent flex items-center justify-center mx-auto mb-3 text-lg"><i class="fa-solid fa-star"></i></div>
+        <h3 class="font-orbitron font-bold text-white text-sm">Calidad Superior</h3>
+        <p class="text-slate-400 text-xs my-2">Productos duraderos y de alto rendimiento garantizados</p>
+        <button class="px-3 py-1 border border-space-accent/40 text-space-accent text-[11px] rounded hover:bg-space-accent/10">Conocer Más</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIOS ================= -->
+  <section class="py-12 px-4 max-w-7xl mx-auto">
+    <div class="text-center mb-10">
+      <h2 class="font-orbitron text-3xl font-bold text-white">
+        Confianza en <span class="text-space-accent">Moon World 2025</span>
+      </h2>
+      <p class="text-slate-400 text-xs mt-1">Nuestra dedicación a la innovación se refleja en la satisfacción de nuestros clientes</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="bg-space-card/80 border border-space-border p-5 rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-xs text-white">SR</div>
+          <div>
+            <h4 class="font-bold text-white text-xs">Sofía Rodríguez</h4>
+            <p class="text-[10px] text-space-accent">Diseñadora de Experiencia Digital</p>
+          </div>
+        </div>
+        <p class="text-slate-300 text-[11px] italic leading-relaxed">
+          "Moon World 2025 ha revolucionado mi forma de ver la tecnología. Los productos son innovadores, de alta calidad y los precios son increíbles. ¡Totalmente recomendado!"
+        </p>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-5 rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-xs text-white">JL</div>
+          <div>
+            <h4 class="font-bold text-white text-xs">Javier López</h4>
+            <p class="text-[10px] text-space-accent">Director Creativo</p>
+          </div>
+        </div>
+        <p class="text-slate-300 text-[11px] italic leading-relaxed">
+          "La atención al cliente es excepcional y los productos llegan en tiempo récord. Mi smartwatch ULTRA 2 es simplemente perfecto."
+        </p>
+      </div>
+
+      <div class="bg-space-card/80 border border-space-border p-5 rounded-xl">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center font-bold text-xs text-white">IC</div>
+          <div>
+            <h4 class="font-bold text-white text-xs">Isabela Castro</h4>
+            <p class="text-[10px] text-space-accent">Estratega de Marca</p>
+          </div>
+        </div>
+        <p class="text-slate-300 text-[11px] italic leading-relaxed">
+          "Compré las esferas 3D para mi oficina y recibo cumplidos todos los días. La calidad y el diseño futurista son impresionantes."
+        </p>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-8">
+      <a href="https://wa.me/573223569596" target="_blank" class="inline-flex items-center gap-2 px-5 py-2 bg-space-accent text-space-dark font-sans text-xs font-bold rounded-lg hover:bg-cyan-300 transition">
+        <i class="fa-regular fa-comment"></i> Hablemos
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="py-12 px-4 max-w-5xl mx-auto">
+    <div class="bg-space-card border border-space-border rounded-2xl p-10 text-center relative overflow-hidden">
+      <span class="bg-space-accent/20 text-space-accent text-[10px] font-sans px-3 py-1 rounded border border-space-accent/40 uppercase">
+        Nuevas funciones disponibles (Beta)
+      </span>
+
+      <h2 class="font-orbitron text-3xl sm:text-5xl font-bold text-white my-4">
+        Descubre el Futuro en <br>
+        <span class="text-space-accent">Moon World 2025</span>
+      </h2>
+
+      <p class="text-slate-300 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed mb-6">
+        Explora nuestro catálogo futurista, donde la innovación se une a la tecnología de vanguardia. Prepárate para un viaje espacial con productos diseñados para transformar tu experiencia diaria y llevarte más allá de lo imaginable.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#catalogo" class="px-6 py-2.5 bg-black border border-slate-700 text-white font-sans text-xs font-bold rounded hover:bg-slate-900 transition">
+          Ver productos
+        </a>
+        <a href="https://wa.me/573223569596" target="_blank" class="px-6 py-2.5 bg-white text-space-dark font-sans text-xs font-bold rounded hover:bg-slate-200 transition">
+          Contáctanos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contacto" class="bg-black border-t border-space-border/50 pt-10 pb-6 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8 text-xs font-sans">
+      
+      <div>
+        <h4 class="font-orbitron font-bold text-white text-xs mb-3">PRODUCTOS</h4>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#catalogo" class="hover:text-white transition">CATÁLOGO</a></li>
+          <li><a href="#catalogo" class="hover:text-white transition">OFERTAS</a></li>
+          <li><a href="#catalogo" class="hover:text-white transition">NUEVOS LANZAMIENTOS</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-orbitron font-bold text-white text-xs mb-3">SOPORTE</h4>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="https://wa.me/573223569596" target="_blank" class="hover:text-white transition">CONTACTO</a></li>
+          <li><a href="#" class="hover:text-white transition">PREGUNTAS FRECUENTES</a></li>
+          <li><a href="#" class="hover:text-white transition">TÉRMINOS DE SERVICIO</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-orbitron font-bold text-white text-xs mb-3">EMPRESA</h4>
+        <ul class="space-y-2 text-slate-400">
+          <li><a href="#" class="hover:text-white transition">ACERCA DE NOSOTROS</a></li>
+          <li><a href="#" class="hover:text-white transition">CARRERAS</a></li>
+          <li><a href="#" class="hover:text-white transition">NOTICIAS</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-orbitron font-bold text-white text-xs mb-2">Descubre el futuro hoy.</h4>
+        <a href="https://wa.me/573223569596" target="_blank" class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center text-base hover:scale-110 transition mt-3">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-slate-900 pt-6 flex flex-col sm:flex-row justify-between items-center text-[10px] text-slate-600 font-sans">
+      <p>COPYRIGHT © 2025 MOON WORLD. TODOS LOS DERECHOS RESERVADOS.</p>
+      <div class="flex gap-4 mt-2 sm:mt-0">
+        <a href="#" class="hover:text-slate-400">POLÍTICA DE PRIVACIDAD</a>
+        <a href="#" class="hover:text-slate-400">MAPA DEL SITIO</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE CARRITO Y WHATSAPP -->
+  <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <button onclick="toggleCarrito()" aria-label="Carrito" class="relative bg-space-dark neon-border-cyan text-space-accent w-12 h-12 rounded-full flex items-center justify-center text-xl shadow-xl hover:scale-110 transition-transform">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="contadorCarrito" class="absolute -top-1 -right-1 bg-space-accent text-space-dark font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow">0</span>
+    </button>
+
+    <a href="https://wa.me/573223569596" target="_blank" aria-label="WhatsApp" class="bg-emerald-500 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-xl hover:scale-110 transition-transform">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- MODAL / DRAWER LATERAL CARRITO (Diseño Neón Estilo Imagen) -->
+  <div id="backdropCarrito" onclick="toggleCarrito()" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden opacity-0 transition-opacity duration-300"></div>
+  
+  <aside id="drawerCarrito" class="fixed top-0 right-0 h-full w-full sm:w-[380px] bg-space-dark border-l border-space-accent/40 z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between shadow-[0_0_30px_rgba(0,217,255,0.2)]">
+    <!-- Header del Carrito -->
+    <div class="p-6 border-b border-space-border/60 flex justify-between items-center">
+      <h3 class="font-orbitron font-bold text-xl neon-text-cyan">Tu Carrito</h3>
+      <button onclick="toggleCarrito()" class="text-space-neonPink hover:text-white text-lg transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <!-- Items del Carrito -->
+    <div id="itemsCarrito" class="p-6 flex-1 overflow-y-auto space-y-6 divide-y divide-space-border/40">
+      <!-- Items agregados dinámicamente -->
+    </div>
+
+    <!-- Footer del Carrito -->
+    <div class="p-6 border-t border-space-border/60 space-y-4 bg-space-dark/90">
+      <div class="flex justify-between items-center font-orbitron text-lg font-bold">
+        <span class="text-white">Total:</span>
+        <span id="totalCarrito" class="neon-text-cyan">$0</span>
+      </div>
+
+      <button onclick="enviarPedidoWhatsApp()" class="w-full py-3 neon-btn-cyan rounded-lg font-sans font-bold text-sm flex items-center justify-center gap-2 transition">
+        <i class="fa-brands fa-whatsapp text-lg"></i> Pedir por WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- Lógica independiente -->
+  <script src="script.js"></script>
+</body>
+</html>
