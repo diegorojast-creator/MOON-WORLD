@@ -313,7 +313,7 @@ function enviarPedidoWhatsApp() {
     return;
   }
 
-  let texto = "Hola MOON WORLD 2025, deseo realizar el siguiente pedido:\n\n";
+  let texto = "Hola MOON WORLD 2026, deseo realizar el siguiente pedido:\n\n";
   let total = 0;
 
   carrito.forEach(item => {
